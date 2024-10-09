@@ -1,0 +1,6 @@
+pylint
+black
+pytest
+selenium
+pandas
+numpy
