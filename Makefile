@@ -3,10 +3,17 @@ install:
 		pip install -r requirements.txt
 
 systemdep:
-	#sudo apt-get install chromium chromium-driver
+	
+	## Uncomment below for Ubuntu Environment
+	#sudo apt-get update
+	#sudo apt-get install chromium-browser
+	#sudo apt-get install chromium-chromedriver
+	
+	## Uncomment below for Mac Environment
 	#brew install chromedriver chromium
 
 test:
+	#Yet to create test cases
 	#python -m pytest -vv test_main.py
 
 format:
@@ -15,4 +22,4 @@ format:
 lint:
 	pylint --disable=R,C,W0702 main.py Scrapping/*.py
 
-all: install lint format
+all: systemdep install lint format test
