@@ -17,14 +17,12 @@ source ~/.venv/bin/activate
 
 ### Step 2: Install Python Dependencies
 Install all required Python packages:
-
 ```bash
 make install
 ```
 
 ### Step 3: Install System Dependencies
 Update your package list and install system requirements:
-
 ```bash
 sudo apt-get update
 sudo apt-get install chromium-browser
@@ -33,7 +31,6 @@ sudo apt-get install chromium-chromedriver
 
 ### Step 4: Verify Code Functionality
 Run the following command to check code correctness:
-
 ```bash
 make all
 ```
@@ -43,20 +40,17 @@ Run the script to start scraping job data:
 ```bash
 python main.py
 ```
-
 After running the script, a .csv file containing the job data will be generated.
 
 ## Customizing the Job Search
 
 To customize the job search parameters, modify the following function call:
-
 ```python
 main_scrape("data+scientist", "United+States", "1", 3).to_csv(
     "Sample1.csv", index=False
 )
 ```
-
-First Parameter: Job title or keyword (e.g., "data+scientist")
-Second Parameter: Location (e.g., "United+States")
-Third Parameter: Job age (set this to "1" for best results)
-Fourth Parameter: Number of pages to scrape (e.g., 3)
+- First Parameter: Job title or keyword (e.g., "data+scientist")
+- Second Parameter: Location (e.g., "United+States")
+- Third Parameter: Job age (set this to "1" for best results)
+- Fourth Parameter: Number of pages to scrape (e.g., 3)
