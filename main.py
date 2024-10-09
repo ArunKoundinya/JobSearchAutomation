@@ -2,6 +2,6 @@ from Scrapping.Indeed import main_scrape
 
 ## Indeed Example
 
-main_scrape("data+scientist", "United+States", "1", 3).to_csv(
-    "Sample1.csv", index=False
+main_scrape("data+science+manager", "United+States", "1", 5).to_csv(
+    "datasciencemanger_8thOct.csv", index=False
 )
