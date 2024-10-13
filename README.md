@@ -50,7 +50,7 @@ python WebApp/manage.py makemigrations
 python WebApp/manage.py migrate
 ```
 
-### Step 5: Run the Main Script
+### Step 6: Run the Main Script
 
 Run the script to start browser and start browsing it:
 
