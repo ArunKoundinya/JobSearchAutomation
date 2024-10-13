@@ -17,9 +17,9 @@ test:
 	#python -m pytest -vv test_main.py
 
 format:
-	black *.py Scrapping/*.py
+	black *.py Scraping/*.py WebApp/*.py
 
 lint:
-	pylint --disable=R,C,W0702 main.py Scrapping/*.py
+	pylint --disable=R,C,W070,W1510,W0702 main.py Scraping/*.py WebApp/*.py
 
 all: systemdep install lint format test
