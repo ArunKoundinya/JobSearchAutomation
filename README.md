@@ -62,8 +62,7 @@ python main.py
 
 Follow the below screenshots and get the required data into your desktop
 
-![](images/MainPage.png){fig-align="center"}
-
-![](images/SearchPattern.png){fig-align="left" width="476"} ![](images/Success.png){fig-align="right" width="476" height="170"}
-
-![](images/DownloadData.png){fig-align="center"}
+![](images/MainPage.png)
+![](images/SearchPattern.png) 
+![](images/Success.png)
+![](images/DownloadData.png)
