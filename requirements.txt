@@ -4,3 +4,5 @@ pytest
 selenium
 pandas
 numpy
+Django
+pyinstaller

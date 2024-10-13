@@ -1,7 +1,8 @@
-from Scrapping.Indeed import main_scrape
+import subprocess
 
-## Indeed Example
+def run_django_server():
+    # This will execute the command 'python manage.py runserver'
+    subprocess.run(["python", "WebApp/manage.py", "runserver"])
 
-main_scrape("data+science+manager", "United+States", "1", 5).to_csv(
-    "datasciencemanger_8thOct.csv", index=False
-)
+if __name__ == "__main__":
+    run_django_server()

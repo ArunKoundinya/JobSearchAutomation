@@ -31,7 +31,7 @@ def extracthref(inputlist, index):
     return oextracthref
 
 
-def main_scrape(search, location, age, pages):
+def scrape_indeed(search, location, age, pages):
     JobTitles = []
     CompanyName = []
     JobLocation = []

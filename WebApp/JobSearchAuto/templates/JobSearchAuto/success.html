@@ -1,0 +1,15 @@
+<!-- templates/pages/success.html -->
+{% extends "base.html" %}
+
+{% block page_content %}
+    <div class="container text-center">
+        <h1 class="mt-5">Success!</h1>
+        <p>Your job search data has been submitted successfully.</p>
+
+        <!-- Add the link to the job search results page -->
+        <a href="{% url 'job_search_results' %}" class="btn btn-info mt-4">View Stored Job Searches</a>
+
+        <!-- Optional: Add a link to go back to the homepage -->
+        <a href="{% url 'home' %}" class="btn btn-primary mt-4">Go Back to Home</a>
+    </div>
+{% endblock %}
